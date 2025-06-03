@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+	background: url('https://thumbs.dreamstime.com/b/business-background-4416886.jpg');
+	height: 10vh;
+	background-size: cover;
+	
+}
+
+
+
+
+.hover{
+	background-color: rgb(162, 224, 255);
+	color: rgb(0, 53, 66);
+}
+
+button:hover{
+	background-color: rgb(255, 175, 175);
+	color: rgb(0, 38, 55);	
+	;
+}
+
+#instruction{
+	background-color: yellow;
+}
+
+a{
+	color: rgb(158, 149, 149);
+	text-decoration: none;
+	
+}
+
+}
+#hindi{background-color: rgb(255, 0, 0);}
+
+
+.font{
+
+	font-family: 'Poppins', sans-serif;
+}
+
