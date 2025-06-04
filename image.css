@@ -1,0 +1,54 @@
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper.jpg');
+	height: 95vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+	padding: 2px
+	
+}
+p{
+    color: aliceblue;
+}
+.header .logo{
+	color: white;
+}
+.header .naver a{
+	color: white;
+	margin-top: 20px;
+	padding: 30px;
+	
+}
+.header .naver .nav-items{
+	margin-right: 50px;
+}
+.header .naver .logo{
+	margin-left: 50px;
+}
+
+
+
+.header .naver .logo{
+	float: left;}
+
+.header .naver .nav-items{
+	float: right;}
+
+a{
+	text-decoration: none;
+}
+li{
+	display: inline-block;
+	font-size: 20px;
+}
+h3{
+	color: white;
+}
+button{
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 20px;
+	font-size: 15px;
+	background-color: rgb(226, 210, 232);
+}
