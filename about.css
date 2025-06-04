@@ -8,3 +8,33 @@ body{
 h1{
     color: white;
 }
+.header .logo{
+	color: white;
+}
+.header .naver a{
+	color: white;
+	margin-top: 20px;
+	padding: 30px;
+	
+}
+.header .naver .nav-items{
+	margin-right: 50px;
+}
+.header .naver .logo{
+	margin-left: 50px;
+}
+
+
+
+.header .naver .logo{
+	float: left;}
+
+.header .naver .nav-items{
+	float: right;}
+
+a{
+	text-decoration: none;
+}
+li{
+	display: inline-block;
+	font-size: 20px;
