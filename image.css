@@ -54,7 +54,7 @@ h3{
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background:  #9917FF;
+  background: black;
   cursor: pointer;
   transition: all 450ms ease-in-out;
 }
