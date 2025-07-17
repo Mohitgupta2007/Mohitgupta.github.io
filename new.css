@@ -133,13 +133,15 @@ body {
 /* Right image */
 .image img {
   max-width: 270px;
-      box-shadow: 0 0 25px #00f7ff;
+      
   
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.09);
  
 }
   .image:hover img {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #00f7ff;
+  transform: scale(1.04);
+      box-shadow: 0 0 3px #00f7ff;
+      transition-duration:0.8s
+    
     }
