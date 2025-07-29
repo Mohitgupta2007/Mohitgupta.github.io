@@ -1,95 +1,97 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
-  background-color: #0b0b1c;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-
-  /* Centering the container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #050505 0%, #0a0a0a 100%);
+  color: #e0e0e0;
+  overflow: hidden;
+  height: 100vh;
 }
-
-/* Main container */
-.container {
-  max-width: 1100px;
-  width: 100%;
-  padding: 2rem;
-  padding-right: 5rem;
-  background-color: #0e0e22;
-  border-radius: 12px;
-  border: 2px solid #0e01ff;
-}
-/* #333 borde for container */
 
 /* Navbar */
 .navbar {
-  margin-bottom: 2rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ccc;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #fff;
-  border-bottom: 2px solid white;
-  border-radius: 5px;
-}
-
-/* Hero section */
-.hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  background: rgba(5, 5, 20, 0.4);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+  z-index: 10;
 }
 
-/* Left content */
-.content {
-  flex: 1;
-  max-width: 500px;
+.logo {
+  font-size: 1.8rem;
+  color: #00bfff;
+  font-weight: bold;
 }
 
-.content h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.content span {
+.logo span {
   color: #ffffff;
+  font-size: 1.4rem;
 }
 
-.content p {
-  color: #a0a0b2;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glass-box {
+  background: rgba(0, 0, 20, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 191, 255, 0.3);
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 191, 255, 0.3);
+  animation: float 2s ease-in-out infinite;
+}
+
+.glass-box h1 {
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color: #00bfff;
 }
 
-/* Button with cool hover */
+.glass-box h1 span {
+  color: white;
+}
+
+.glass-box p {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  color: #bbb;
+}
+
 .btn {
   display: inline-block;
   background-color: transparent;
@@ -130,18 +132,32 @@ body {
   z-index: 1;
 }
 
-/* Right image */
-.image img {
-  max-width: 270px;
-      
-  
-  border-radius: 12px;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.09);
- 
+
+/* Naruto Image */
+.naruto-slot img {
+  width:250px;
+  /* max-width: 100%; */
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.3);
+  animation: floatImg 2s ease-in-out infinite;
 }
-  .image:hover img {
-  transform: scale(1.04);
-      box-shadow: 0 0 3px #00f7ff;
-      transition-duration:0.8s
-    
-    }
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatImg {
+  0%, 100% {
+    transform: translateY(0px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(1deg);
+  }
+}
+
