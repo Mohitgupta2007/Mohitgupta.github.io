@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pranshu Singhal | Techworld</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f6f7fb;
+  color:#222;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#fff;
+  box-shadow:0 4px 20px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav h2{
+  color:#4f46e5;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#4f46e5;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:90px 60px;
+}
+
+/* TEXT */
+.hero-text h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.hero-text span{
+  color:#f97316;
+}
+
+.hero-text h3{
+  color:#4f46e5;
+  margin-bottom:15px;
+}
+
+.hero-text p{
+  color:#555;
+  margin-bottom:30px;
+  max-width:520px;
+}
+.projects h3{
+  color:#bb00ff;
+  margin-bottom:15px;
+}
+
+/* BUTTON */
+.btn{
+  padding:14px 34px;
+  background:#4f46e5;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:500;
+  transition:0.4s;
+  box-shadow:0 10px 25px rgba(79,70,229,0.35);
+}
+
+.btn:hover{
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 20px 40px rgba(79,70,229,0.6);
+}
+
+/* IMAGE */
+.hero-img img{
+  width:380px;
+  height:380px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #4f46e5;
+  padding:6px;
+  background:#fff;
+  transition:0.6s;
+}
+
+.hero-img img:hover{
+  transform:rotate(2deg) scale(1.05);
+  box-shadow:0 0 35px rgba(79,70,229,0.6);
+}
+
+/* SECTIONS */
+section{
+  padding:80px 60px;
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+section h2{
+  font-size:36px;
+  margin-bottom:20px;
+  color:#4f46e5;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+a{
+      font-size:20px;
+  margin-bottom:20px;
+  color:#000000;
+    text-decoration:none;
+}
+
+.project-card{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.project-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer{
+  background:#fff;
+  padding:25px;
+  text-align:center;
+  color:#666;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-img{
+    margin-top:40px;
+  }
+
+  .hero-img img{
+    width:260px;
+    height:260px;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Pranshu</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi There,<br>I'm <span>Pranshu Singhal</span></h1>
+    <h3>Techworld</h3>
+    <p>All mod apk are here. I explore tech, tools and mod applications.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="me.jpeg" alt="Pranshu">
+  </div>
+</div>
+
+<section id="projects">
+  <h2>My All Projects</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>moviesbox primium</h3> 
+      <br>
+      <a href="base.apk">Download</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Tech Tools</h3>
+      <p>Useful tools and utilities for tech users.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Tech Blog</h3>
+      <p>Guides, tutorials and tips.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourname@email.com</p>
+</section>
+
+<footer>
+  © 2026 Pranshu Singhal | Techworld
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
