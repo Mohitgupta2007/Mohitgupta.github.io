@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Result - RTU</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background:#efefef;
+}
+
+/* HEADER */
+.topbar{
+    background:#173e63;
+    padding:10px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header-banner{
+    height:65px;
+}
+
+.logout-btn{
+    background:#f4a742;
+    border:none;
+    padding:8px 16px;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+    margin:20px;
+    border:1px solid #d6d6d6;
+    background:white;
+}
+
+/* SECTION TITLE */
+.section-title{
+    background:#e2e2e2;
+    padding:12px 20px;
+    font-weight:600;
+    border-bottom:1px solid #cfcfcf;
+    font-size:16px;
+}
+
+/* FORM AREA */
+.form-area{
+    background:#f7f7f7;
+    padding:30px 40px;
+}
+
+.form-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.form-group{
+    width:45%;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+label{
+    width:150px;
+    font-size:14px;
+}
+
+input, select{
+    flex:1;
+    padding:6px;
+    border:1px solid #c5c5c5;
+    border-radius:4px;
+    background:white;
+}
+
+.note{
+    color:red;
+    font-size:16px;
+    margin:8px 0;
+}
+
+.button-row{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+
+.btn{
+    background:#173e63;
+    color:white;
+    padding:8px 20px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.bottom-grey{
+    height:70px;
+    background:#cfcfcf;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .form-row{
+        flex-direction:column;
+        gap:15px;
+    }
+    .form-group{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="topbar">
+    <img src="https://rtu.sumsraj.com/App_Themes/skyblue/images/logo-white.png" alt="RTU Banner" class="header-banner">
+    <button class="logout-btn">Logout</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="wrapper">
+
+    <div class="section-title">
+        📝 DOWNLOAD RESULT
+    </div>
+
+    <div class="form-area">
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Session :</label>
+                <select>
+                    <option>2025 - 2026</option>
+                    <option>2024 - 2025</option>
+                    <option>2023 - 2024</option>
+                    <option>2022 - 2023</option>
+        
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Exam Category :</label>
+                <select>
+                    <option> ODD SEMESTER</option>
+                   
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Degree :</label>
+                <select>
+                    <option>B. Tech</option>
+                 <option value="2">B. Arch</option>
+	<option >B. Des</option>
+	<option>B. Tech</option>
+	<option >B. Tech UD</option>
+	<option >BFA</option>
+	<option >BFAD</option>
+	<option >BVE</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Semester :</label>
+                <select>
+                    <option>-- Select Semester --</option>
+                     <option> I SEM </option>
+                    <option> III SEM </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Roll No. :</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Mother's Name :</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Father's Name :</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="note">
+            Note : Please enter at least the first 4 characters of your mother's or father's name.
+        </div>
+
+        <div class="note">
+            Note : In case of 1. "UM" - Result will be declared after University decision published.
+        </div>
+
+        <div class="note">
+            Note : In case of 2. "RW" - Result will be declared after deficiency is cleared. (College needs to contact University regarding this.)
+        </div>
+
+        <div class="button-row">
+            <button class="btn"><a style="color: white; text-decoration: none;" href="data:image/jpeg;base64,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">DOWNLOAD</a></button>
+            <button class="btn">RESET</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="bottom-grey"></div>
+
+</body>
+</html>
