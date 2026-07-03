@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation | NGO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #2563eb;
+        }
+
+        /* Homepage Hero Section */
+        #home {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2000&auto=format&fit=crop') center/cover;
+            color: white;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        #home p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 12px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Global Section Styles */
+        section {
+            padding: 80px 5%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #1e293b;
+        }
+
+        /* About Us Section */
+        #about {
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-text h2 {
+            text-align: left;
+        }
+        .about-img {
+            flex: 1;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1593113589914-075568e0944b?q=80&w=1000&auto=format&fit=crop') center/cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Services Section */
+        #services {
+            background: white;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin: 15px 0;
+            color: #2563eb;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+        }
+        #contact h2 {
+            color: white;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+        form .btn {
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Hope Foundation</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h1>Empowering Communities, Changing Lives</h1>
+        <p>We are dedicated to providing quality education, vital healthcare, and emergency relief to underserved communities worldwide. Join us in making a difference.</p>
+        <a href="#contact" class="btn">Get Involved Today</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>Founded in 2018, Hope Foundation is a registered non-governmental organization (NGO) driven by a single goal: doing our part in making the world a better place for all.</p>
+            <br>
+            <p>We believe that every child deserves an education, every family deserves healthcare, and every community deserves a chance to thrive. We work directly on the ground, partnering with local leaders to create sustainable, long-term impact.</p>
+        </div>
+        <div class="about-img"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Core Programs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>📚 Youth Education</h3>
+                <p>Providing school supplies, scholarships, and after-school tutoring for children in rural areas to ensure they have the foundation for a bright future.</p>
+            </div>
+            <div class="card">
+                <h3>🏥 Medical Clinics</h3>
+                <p>Operating mobile health clinics that offer free checkups, vaccinations, and essential medicines to remote villages without access to hospitals.</p>
+            </div>
+            <div class="card">
+                <h3>🌾 Hunger Relief</h3>
+                <p>Distributing weekly food care packages and teaching sustainable farming techniques to help communities achieve food security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p style="margin-bottom: 30px;">Have questions or want to volunteer? Send us a message.</p>
+        <form onsubmit="event.preventDefault();">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <textarea placeholder="How can you help?" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hope Foundation. Built by AI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
